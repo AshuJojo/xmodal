@@ -1,8 +1,9 @@
 import { useState } from "react"
 import Modal from "../Modal/Modal"
+import UserForm from "../UserForm/UserForm";
 
 const Home = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(true);
 
     const handleOpen = () => {
         setIsModalOpen(true);
@@ -17,7 +18,7 @@ const Home = () => {
             <h1>User Details Modal</h1>
             <button type="button" onClick={handleOpen}>Open Form</button>
             <Modal isOpen={isModalOpen} handleClose={handleClose}>
-                <h1>Modal</h1>
+                <UserForm />
             </Modal>
         </div>
     )

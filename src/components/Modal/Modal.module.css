@@ -1,4 +1,4 @@
-.Modal{
+.Modal {
     position: absolute;
     top: 0;
     left: 0;
@@ -6,13 +6,15 @@
     bottom: 0;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
-    
+
     display: flex;
+
     align-items: center;
     justify-content: center;
 }
 
-.ModalContent{
+.ModalContent {
+    min-width: 30%;
     background-color: white;
     border-radius: 4px;
     padding: 8px;

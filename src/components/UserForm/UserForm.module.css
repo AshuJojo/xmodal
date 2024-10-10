@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.input {
+    margin: 10px 30px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+}
+
+.button{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
