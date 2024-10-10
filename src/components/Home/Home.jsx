@@ -1,5 +1,5 @@
-import { useState } from "react"
-import Modal from "../Modal/Modal"
+import { useState } from "react";
+import Modal from "../Modal/Modal";
 import UserForm from "../UserForm/UserForm";
 
 const Home = () => {

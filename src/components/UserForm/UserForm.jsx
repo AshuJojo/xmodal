@@ -50,7 +50,7 @@ const UserForm = ({ handleModalClose }) => {
             <input type='number' id='phone' value={formInput.phone} onChange={handleInputChange} className={styles.input} required />
             <strong>Date of Birth:</strong>
             <input type='date' id='dob' value={formInput.dob} onChange={handleInputChange} className={styles.input} required />
-            <button type='submit' className={styles.button}>Submit</button>
+            <button type='submit' className={`submit-button ${styles.button}`}>Submit</button>
         </form>
     )
 }
