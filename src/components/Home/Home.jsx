@@ -3,7 +3,7 @@ import Modal from "../Modal/Modal"
 import UserForm from "../UserForm/UserForm";
 
 const Home = () => {
-    const [isModalOpen, setIsModalOpen] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleOpen = () => {
         setIsModalOpen(true);
@@ -18,7 +18,7 @@ const Home = () => {
             <h1>User Details Modal</h1>
             <button type="button" onClick={handleOpen}>Open Form</button>
             <Modal isOpen={isModalOpen} handleClose={handleClose}>
-                <UserForm />
+                <UserForm handleModalClose={handleClose} />
             </Modal>
         </div>
     )
